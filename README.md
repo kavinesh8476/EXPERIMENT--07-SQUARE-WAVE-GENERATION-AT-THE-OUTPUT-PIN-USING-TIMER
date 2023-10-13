@@ -90,46 +90,61 @@ Step10. Double click on the the MCU part to open settings. Next to the Program F
 Step14. click on debug and simulate using simulation as shown below 
  ![image](https://github.com/vasanthkumarch/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/36288975/b8efbfc2-f0c5-4106-8117-3a6e7ac87f6c)
 
-
- 
-
   
 
 ## STM 32 CUBE PROGRAM :
-
-
-
-
+```
+DEVELOPED BY:KAVINESH M
+REGISTER NO:212222230064
+```
+```
+HAL_TIM_Base_Start(&htim2);
+HAL_TIM_PWM_Init(&htim2);
+HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_1);
+```
 
 ## Output screen shots of proteus  :
  
- 
+ ![image](https://github.com/kavinesh8476/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/118466561/e812c9f4-aa0a-40d6-8414-81b3a0aa1b0f)
+
  ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
- 
+
+ ![image](https://github.com/kavinesh8476/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/118466561/e948141c-10d5-4932-a31e-ec8c05f01c62)
+
 
 ## DUTY CYCLE AND FREQUENCY CALCULATION 
-FOR PULSE AT 500
+### FOR PULSE AT 500
+![image](https://github.com/kavinesh8476/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/118466561/04b32732-f689-41a8-a542-17337b3f5f97)
 
-TON = 
-TOFF=
-TOTAL TIME = 
+```
+TON = 2
+TOFF=2 
+TOTAL TIME = 4
 FREQUENCY = 1/(TOTAL TIME)
+FREQUENCY = 250Hz
+```
 
-FOR PULSE AT 700
+### FOR PULSE AT 700
+![image](https://github.com/kavinesh8476/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/118466561/eab37a38-0950-4886-9cb6-d7364b9e798e)
 
-TON = 
-TOFF=
-TOTAL TIME = 
+```
+TON = 3
+TOFF=1 
+TOTAL TIME = 4
 FREQUENCY = 1/(TOTAL TIME)
+FREQUENCY =250Hz
+```
 
+### FOR PULSE AT 900
+![image](https://github.com/kavinesh8476/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/118466561/1a560997-5087-4055-b5eb-aa8a7830c947)
 
-FOR PULSE AT 900
-
-TON = 
-TOFF=
-TOTAL TIME = 
+```
+TON = 3.5 
+TOFF=0.5 
+TOTAL TIME = 4 
 FREQUENCY = 1/(TOTAL TIME)
-
+FREQUENCY=250Hz
+```
 
 ## Result :
 A PWM Signal is generated using the following frequency and various duty cycles are simulated 
